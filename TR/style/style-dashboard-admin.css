@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #1e2a47;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+
+.sidebar {
+    width: 300px;
+    background-color: #1e2a47;
+    color: white;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.logout-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #457b9d;
+}
+
+
+.content {
+    flex: 1;
+    max-width: 1100px;
+    padding: 20px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    margin: 20px auto; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto; 
+}
+
+.content h1 {
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th {
+    background-color: #f09721;
+    color: white;
+    text-align: center;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 
+
+
+
+
+deletedata{
+
+}
+
+.delete-btn {
+    color:white;
+    display: block; 
+    text-decoration: none;
+    padding: 7px; 
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(206, 26, 26); 
+    transition: background-color 0.3s ease;
+    width: 80px; 
+
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+
+
+.delete-btn:hover {
+    background-color: rgb(185, 16, 16); 
+}
+
+.button-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%; 
+}
+
+button, .accept-btn, .reject-btn {
+    display: inline-block; 
+    font-size: 14px; 
+    color: white;
+    background-color: rgb(206, 26, 26); 
+    border: none;
+    padding: 7px 15px; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 0; 
+    width: auto; 
+}
+
+
+.accept-btn {
+    background-color: rgb(56, 197, 56);
+}
+
+.accept-btn:hover {
+    background-color: rgb(38, 134, 38);
+}
+
+.reject-btn {
+    background-color: rgb(206, 26, 26);
+}
+
+.reject-btn:hover {
+    background-color: rgb(185, 16, 16);
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; 
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .content {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
