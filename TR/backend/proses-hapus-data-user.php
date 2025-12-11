@@ -11,9 +11,9 @@ $status = $act->hapusDataUser($id);
 if($status==true) {
 
     echo "<script>
-            var konfirmasi = confirm('Apakah Anda yakin ingin menghaps data user?');
+            var konfirmasi = confirm('Apakah Anda yakin ingin menghapus user ini?');
             if (konfirmasi) {
-                alert('Berhasil melakukan user!');
+                alert('Berhasil menghapus user!');
                 window.location.href = '../frontend/view-tampil-data-user.php';
             } else {    
                 window.history.back();

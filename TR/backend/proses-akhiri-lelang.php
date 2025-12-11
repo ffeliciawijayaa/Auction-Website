@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['id_barang'])) {
         echo "<script>
             var konfirmasi = confirm('Apakah Anda yakin ingin mengakhiri lelang?');
             if (konfirmasi) {
-                alert('Berhasil melakukan penolakan!');
+                alert('Berhasil mengakhiri lelang!');
                 window.location.href = '../frontend/view-page-admin.php';
             } else {    
                 window.history.back();
